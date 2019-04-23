@@ -13,8 +13,6 @@ import { ajax } from 'rxjs/ajax';
 })
 export class ForumComponent implements OnInit {
 
-
-
   postData: any = [];
 
   constructor() { }
@@ -24,10 +22,9 @@ export class ForumComponent implements OnInit {
   // and we want the variable to take o nthe data of response
   ngOnInit() {
     
+    const getData = ajax('http://localhost:3000/posts');
 
-    const postData = ajax('http://localhost:3000/posts');
-
-    postData.subscribe(response => {
+    getData.subscribe(response => {
       this.postData = response.response;
       console.log(response.status);
       console.log(this.postData);

@@ -1,8 +1,5 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Posts } from './posts.interface';
-import { Observable } from 'rxjs';
-
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -16,18 +13,18 @@ const httpOptions = {
   styleUrls: ['./post.component.css']
 })
 
-
 @Injectable()
 export class PostComponent implements OnInit {
 
-  topic: string;
-  bodyInformation: string;
+  topic: string = "";
+  bodyInformation: string = "";
 
   private url: string = "http://127.0.0.1:3000/posts";
 
   // This is where my information is going to be posted to firebase
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
+  // creates data for the questions to be answered tab
   postData() {
     this.http.post(this.url, {
       "topic": this.topic,
@@ -36,9 +33,23 @@ export class PostComponent implements OnInit {
       .subscribe(
         data => {
           console.log("Put request is successful ", data);
-        });
+        }),
+        
+        httpOptions;
+
+  }
+
+  // Users won't be allowed to input data unless it's been filled out
+  isValid() {
+    let isOK = false;
+
+    isOK = this.topic.length > 0 &&
+      this.bodyInformation.length > 0;
+
+    return isOK;
   }
 
   ngOnInit() {
+
   }
 }

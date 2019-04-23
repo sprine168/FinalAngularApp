@@ -11,5 +11,5 @@
 
     </div>
 
-    <p><button class="btn btn-primary" routerLink="/forum" (click)='postData()'>Create New Post</button></p>
+    <p><button [disabled]="!isValid()" class="btn btn-primary" routerLink="/forum" (click)='postData()'>Create New Post</button></p>
 </div>
