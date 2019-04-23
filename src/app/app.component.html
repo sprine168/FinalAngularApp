@@ -3,26 +3,32 @@
   <h1 class="text-primary">Computer Science Information forum</h1>
 </section>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default pull-right">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      
+
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a routerLink="/">Home</a>
       </li>
-      
+
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a routerLink="/posts">Make New Post</a>
       </li>
-      
+
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        <a routerLink="/forum">Forum</a>
+        <a routerLink="/forum">Question to be Answered</a>
       </li>
 
     </ul>
   </div>
 </nav>
 
+<br>
+<br>
 
-<!-- router-outlet is for routing features of the app -->
-<router-outlet></router-outlet>
+<div>
+  <!-- router-outlet is for routing features of the app -->
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer navbar-fixed-bottom text-center text-primary well">This is the footer</footer>

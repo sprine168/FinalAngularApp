@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Information } from './information.model';
+import { Component, OnInit, Output } from '@angular/core';
+import { Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+
+
+import { ajax } from 'rxjs/ajax';
 
 @Component({
   selector: 'app-forum',
@@ -8,20 +13,26 @@ import { Information } from './information.model';
 })
 export class ForumComponent implements OnInit {
 
-  // object to hold the information for the forum
-  info:Information[] = [
-    new Information("Type in the topic for your question",
-     "Type in your question with as much detail as possible to the problem you are having", 
-     "Press the submit button to save your topic and question to the forum")
-  ]
 
 
-
-
+  postData: any = [];
 
   constructor() { }
 
+  // When the page loads, run an ajax request to pull out the data.
+  // we want the response of the response we get back.
+  // and we want the variable to take o nthe data of response
   ngOnInit() {
+    
+
+    const postData = ajax('http://localhost:3000/posts');
+
+    postData.subscribe(response => {
+      this.postData = response.response;
+      console.log(response.status);
+      console.log(this.postData);
+    });
+
   }
 
 }

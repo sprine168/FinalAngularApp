@@ -1,3 +1,15 @@
-<p>
-  post works!
-</p>
+<div class="container">
+
+    <!-- This division is a form in angular -->
+    <div>
+        <label>Enter Topic Here</label>
+        <p><input type="text" [(ngModel)]="topic"></p>
+        <br>
+
+        <label>Enter Question about topic here</label>
+        <p><input type="text" [(ngModel)]="bodyInformation"></p>
+
+    </div>
+
+    <p><button class="btn btn-primary" routerLink="/forum" (click)='postData()'>Create New Post</button></p>
+</div>

@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "topic": "json-server",
+      "bodyInformation": "typicode"
+    },
+    {
+      "id": 2,
+      "topic": "json-server",
+      "bodyInformation": "typicode"
+    },
+    {
+      "topic": "ethrth",
+      "id": 3
+    },
+    {
+      "topic": "sdfgsdfgdsfg",
+      "id": 4
+    },
+    {
+      "topic": "topic",
+      "id": 5
+    },
+    {
+      "topic": "new topic",
+      "bodyInformation": "New Question",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "topic": "This is a new topic",
+      "bodyInformation": "This is a new Question here about stuff and things",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
