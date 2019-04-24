@@ -3,9 +3,13 @@
 -->
 
 <div class="container">
-    <ul *ngFor="let posts of postData" >
-        <li>{{ posts.topic }}</li>
-        <li>{{ posts.bodyInformation }}</li>
-    </ul>
+    <div class="row" *ngFor="let posts of postData">
 
+        <p class="h3">Question {{ posts.id }}</p>
+
+        
+        <p>The topic is: <strong>{{ posts.topic }}</strong> </p>
+        <p class="text-info">The question is: {{ posts.bodyInformation }}</p>
+
+    </div>
 </div>
