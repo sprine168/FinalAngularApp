@@ -1,9 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
-import { Observable } from 'rxjs';
-import { filter, map } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
-
-
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { ajax } from 'rxjs/ajax';
 
 @Component({

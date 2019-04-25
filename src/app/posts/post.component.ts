@@ -1,11 +1,12 @@
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit, Injectable, Input } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Topic } from '../home/select-topic/topic.model';
 
 const httpOptions = {
   headers: new HttpHeaders({
     'content-type': 'application/json'
   })
-}
+};
 
 @Component({
   selector: 'app-post',
@@ -15,6 +16,9 @@ const httpOptions = {
 
 @Injectable()
 export class PostComponent implements OnInit {
+
+  @Input()
+  public topics:Topic;
 
   topic: string = "";
   bodyInformation: string = "";
@@ -34,9 +38,8 @@ export class PostComponent implements OnInit {
         data => {
           console.log("Put request is successful ", data);
         }),
-        
-        httpOptions;
 
+        httpOptions
   }
 
   // Users won't be allowed to input data unless it's been filled out

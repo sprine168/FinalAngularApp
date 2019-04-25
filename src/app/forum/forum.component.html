@@ -2,14 +2,21 @@
      is displayed for the app
 -->
 
-<div class="container">
-    <div class="row" *ngFor="let posts of postData">
+<table class="table table-bordered table-hover">
 
-        <p class="h3">Question {{ posts.id }}</p>
+    <thead>
+        <tr class="info text-center">
+            <td>Topics</td>
+            <td>Questions</td>
+        </tr>
+    </thead>
 
-        
-        <p>The topic is: <strong>{{ posts.topic }}</strong> </p>
-        <p class="text-info">The question is: {{ posts.bodyInformation }}</p>
+    <tbody>
+        <tr *ngFor="let posts of postData">
+            <td>{{ posts.topic }}</td>
+            <td>{{ posts.bodyInformation }}</td>
+        </tr>
+    </tbody>
 
-    </div>
-</div>
+
+</table>

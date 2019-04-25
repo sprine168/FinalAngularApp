@@ -1,20 +1,18 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-sm-4">
-      <h3 class="text-info">Rule 1</h3>
-      <p class="text-large">Have fun with the questions!</p>
+    <div class="col-sm-6 text-primary">
+      <p class="h3">Topics that can be answered on this forum:</p>
     </div>
 
-    <div class="col-sm-4">
-      <h3 class="text-info">Rule 2</h3>
-      <p>Ask questions about hardware</p>
+    <div class="col-sm-6 text-info">
+      <!-- Passing data down to select-topic component using @input -->
+      <app-select-topic class="h4" *ngFor="let data of selectableTopics" [topics]="data"></app-select-topic>
     </div>
-
-    <div class="col-sm-4">
-      <h3 class="text-info">Rule 3</h3>
-      <p>Ask questions about software</p>
-    </div>
-
+ 
   </div>
 </div>
+
+<hr>
+
+<app-enter-new-topic (sendTopicEntryEvent)="addTopic($event)" ></app-enter-new-topic>

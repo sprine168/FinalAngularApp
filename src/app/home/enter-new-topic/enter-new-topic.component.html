@@ -1,0 +1,10 @@
+<!-- A section for entering new topics that can be answered -->
+<section class="container">
+  <p class="h3 well text-primary text-center">Add a Topic That can Be Discussed</p>
+
+  <p><label>Input a new topic that answers can be questioned for</label></p>
+  <input class="form-control" [(ngModel)]="newTopic">
+
+  <br>
+  <button class="button btn bg-primary" (click)="enterTopic()" [disabled]="newTopic.length == 0">Enter New Topic</button>
+</section>

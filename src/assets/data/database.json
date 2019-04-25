@@ -9,16 +9,111 @@
       "topic": "Testing topic",
       "bodyInformation": "This is a new question without a doubt",
       "id": 2
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "topic": "Testing topic 2",
+      "bodyInformation": "This is a question for the board",
+      "id": 3
+    },
+    {
+      "topic": "hardware",
+      "bodyInformation": "Some question about stuff",
+      "id": 4
+    },
+    {
+      "topic": "Todo, make this a dropdown menu with a set of topics coming in from the json file",
+      "bodyInformation": "Dooo dooo dooo",
+      "id": 5
+    },
+    {
+      "topic": "rgterg",
+      "bodyInformation": "ergergerg",
+      "id": 6
+    },
+    {
+      "topic": "ergerger",
+      "bodyInformation": "gergergerg",
+      "id": 7
+    },
+    {
+      "topic": "fgeddfg",
+      "bodyInformation": "dfgdfgdfgdfg",
+      "id": 8
+    },
+    {
+      "topic": "tgrrth",
+      "bodyInformation": "rthrthrth",
+      "id": 9
+    },
+    {
+      "topic": "Testing topic",
+      "bodyInformation": "Something about the topic that you can ask questions about",
+      "id": 10
+    },
+    {
+      "topic": "Hardware",
+      "bodyInformation": "Some question about hardware is here as a placeholder",
+      "id": 11
+    },
+    {
+      "topic": "Web Development Question",
+      "bodyInformation": "oethgiorewthgiojretjhirjhjt",
+      "id": 12
+    },
+    {
+      "topic": "Web Development Question",
+      "bodyInformation": "Thjoeitjhoisjrthoij",
+      "id": 13
+    },
+    {
+      "topic": "Hardware",
+      "bodyInformation": "dfsgsdfgsdfgsdfg",
+      "id": 14
+    },
+    {
+      "topic": "Hardware",
+      "bodyInformation": "dfsgsdfgsdfgsdfg",
+      "id": 15
+    },
+    {
+      "topic": "Hardware",
+      "bodyInformation": "goggly gook",
+      "id": 16
+    },
+    {
+      "topic": "Hardware",
+      "bodyInformation": "thrthrth",
+      "id": 17
+    },
+    {
+      "topic": "Data Science",
+      "bodyInformation": "rgrethrthrthrth",
+      "id": 18
+    },
+    {
+      "topic": "Web Development Question",
+      "bodyInformation": "gnfgnfgn",
+      "id": 19
+    },
+    {
+      "topic": "Data Science",
+      "bodyInformation": "fgnfgnfgn",
+      "id": 20
+    },
+    {
+      "topic": "Hardware",
+      "bodyInformation": "rthrthrth",
+      "id": 21
+    },
+    {
+      "topic": "test",
+      "bodyInformation": "test2",
+      "id": 22
+    },
+    {
+      "topic": "tjhrth",
+      "bodyInformation": "rthrthrth",
+      "id": 23
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
