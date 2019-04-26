@@ -2,10 +2,10 @@
   <div class="row">
 
     <div class="col-sm-6 text-primary">
-      <p class="h3">Topics that can be answered on this forum:</p>
+      <p class="h4">Topics that can be discussed:</p>
     </div>
 
-    <div class="col-sm-6 text-info">
+    <div class="col-sm-6 text-primary">
       <!-- Passing data down to select-topic component using @input -->
       <app-select-topic class="h4" *ngFor="let data of selectableTopics" [topics]="data"></app-select-topic>
     </div>

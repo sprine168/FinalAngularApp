@@ -1,22 +1,23 @@
 <!-- This will be where the forum information
      is displayed for the app
 -->
+<section class="container">
+    <table class="table table-bordered table-hover">
 
-<table class="table table-bordered table-hover">
+        <thead>
+            <tr class="info text-center">
+                <td>Topics</td>
+                <td>Questions</td>
+            </tr>
+        </thead>
 
-    <thead>
-        <tr class="info text-center">
-            <td>Topics</td>
-            <td>Questions</td>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr *ngFor="let posts of postData">
-            <td>{{ posts.topic }}</td>
-            <td>{{ posts.bodyInformation }}</td>
-        </tr>
-    </tbody>
+        <tbody>
+            <tr *ngFor="let posts of postData">
+                <td>{{ posts.topic }}</td>
+                <td>{{ posts.bodyInformation }}</td>
+            </tr>
+        </tbody>
 
 
-</table>
+    </table>
+</section>
